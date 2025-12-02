@@ -72,8 +72,7 @@ Recommended pipeline (interactive or CLI)
 1) Confirm the raw data exists in `data/`.
 2) Run `preprocess_steps.py` to generate `processed_dataset/transformed_data.csv`.
 3) Run `train_model.py` to train models and generate metrics + plots.
-4) Optionally run the EDA notebook (`02_data_analysis.ipynb`) for more analysis and to generate comparison plots.
-5) Optionally run the XAI notebook (`03_xai_loan_approval_normalised_v3.ipynb`) to explore SHAP, DiCE, and other explainability outputs.
+4) Optionally run the EDA notebook (`data_analysis.ipynb`) for more analysis and to generate comparison plots.
 
 Notes and troubleshooting
 - If `processed_dataset/` does not exist, `preprocess_steps.py` will create it. Make sure you have write access in the repository root.
