@@ -1,6 +1,14 @@
+import os
+import sys
 import pandas as pd
+
+# Ensure project root is on sys.path so we can import train_model.py
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
+
 from train_model import load_data
-from utils_and_constants import PROCESSED_DATASET, TARGET_COLUMN
+from utils_and_constants import TARGET_COLUMN
 
 def test_load_data(tmp_path):
     # Create a small dummy dataset
